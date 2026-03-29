@@ -1,0 +1,14 @@
+name: TelegramNotifier
+version: '1.0'
+main: com.example.telegramnotifier.TelegramNotifierPlugin
+api-version: '1.20'
+description: Sends Telegram notifications when players join/leave and on server start/stop.
+commands:
+  tgnotify:
+    description: Manage Telegram notifications
+    usage: /tgnotify <reload>
+    permission: telegramnotify.admin
+permissions:
+  telegramnotify.admin:
+    description: Allows managing Telegram notifications
+    default: op

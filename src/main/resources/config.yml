@@ -1,0 +1,25 @@
+# Telegram Bot Configuration
+telegram:
+  # Your Telegram Bot Token (from @BotFather)
+  bot-token: "YOUR_BOT_TOKEN_HERE"
+  # Chat ID where notifications will be sent
+  # Use https://api.telegram.org/bot<TOKEN>/getUpdates to find your chat ID
+  chat-id: ""
+
+# Notification Settings
+notifications:
+  player-join: true
+  player-leave: true
+  server-start: true
+  server-stop: true
+
+# Message formatting
+# Available placeholders for player messages:
+#   {player} - player name
+#   {online} - current online count
+#   {max}    - max player count
+messages:
+  player-join: "🟢 {player} joined the server ({online}/{max})"
+  player-leave: "🔴 {player} left the server ({online}/{max})"
+  server-start: "✅ Server is starting up..."
+  server-stop: "⛔ Server is shutting down..."
